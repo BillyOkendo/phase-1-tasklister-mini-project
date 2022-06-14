@@ -3,22 +3,22 @@ document.addEventListener("DOMContentLoaded", () => {
   const submit = document.querySelector('form');
   submit.addEventListener("submit", (e) => {
     e.preventDefault()
-    createToDo()
+    toDoList()
     submit.reset()
   
 });
 
-function createToDo(){
+function toDoList(){
   const input = document.getElementById("new-task-description");
-  const newTask = document.getElement('li');
-  const deleteBtn = document.createElement('button');
-  newTask.textContent = `${input,value}`;
-  document.getElementById('task').appendChild(newTask);
+  const oneTask = document.getElement('li');
+  const deleteButtn = document.createElement('button');
+  oneTask.textContent = `${input,value}`;
+  document.getElementById('task').appendChild(oneTask);
 
 
-  deleteBtn.textContent= "DONE";
-  newTask.appendChild(deleteBtn);
-  deleteBtn.addEventListener('click', () => newTask.remove())
+  deleteButtn.textContent= "DONE";
+  oneTask.appendChild(deleteButtn);
+  deleteButtn.addEventListener('click', () => oneTask.remove())
 }
 
 
